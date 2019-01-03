@@ -1,4 +1,161 @@
+html
+{
+	min-height:100%;
+	position:relative;
+}
+
 body
 {
-    background-color:blue;
+	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+	margin: 0;
+	height: 100%;
+}
+
+#masterContainer
+{
+	position: absolute;
+	padding:0;
+	top:0;
+    bottom:0;
+    left:0;
+    right:0;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	min-width: auto;
+}
+
+/*header*/
+
+#header
+{
+	order: 1;
+	flex: 1;
+	margin-top:3%;
+	width: auto;
+}
+
+#smallLine
+{
+	position:absolute;
+	margin-left:10%;
+	height:50px;
+	width:2px;
+}
+
+#bigLine
+{
+	position:absolute;
+	margin-left:11.5%;
+	height:100px;
+	width:4px;
+}
+
+#name
+{
+	position:absolute;
+	margin-left: 14%;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.line
+{
+	background-color:red;
+}
+
+/*squares*/
+
+.square
+{	
+	width: 40%;
+	/*position:relative;*/
+	text-align: center;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	font-size: 20px;
+	transition-duration: 0.5s;
+}
+
+.square:hover
+{
+	background-color: red;
+}
+
+#sSection
+{
+	flex:5;
+	order: 2;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3%;
+}
+
+.squareRow
+{
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	flex: 1;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+#tr
+{
+	order: 1;
+}
+
+#br
+{
+	order: 2;
+}
+
+.icon
+{
+	flex: 1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	order: 1;
+	height: 35%;
+	width: 35%;
+}
+
+.caption
+{
+	flex: 1;
+	order: 2;
+}
+
+#s1
+{
+	order: 1;
+	border-right: solid red 1px;
+	border-bottom: solid red 1px;
+}
+
+#s2
+{
+	order:2;
+	border-left: solid red 1px;
+	border-bottom: solid red 1px;
+}
+
+#s3
+{
+	order:1;
+	border-right: solid red 1px;
+	border-top: solid red 1px;
+}
+
+#s4
+{
+	order:2;
+	border-left: solid red 1px;
+	border-top: solid red 1px;
 }
